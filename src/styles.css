@@ -1,0 +1,169 @@
+.macbook-pro-14-option-9 .x11-negro {
+  background-color: transparent;
+  height: 64.760009765625px;
+  min-width: 64.76025390625px;
+  mix-blend-mode: normal;
+  object-fit: cover;
+  position: relative;
+}
+
+.screen * {
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+}
+
+.screen div {
+  -webkit-text-size-adjust: none;
+}
+
+:root {
+  --bgwhite: #fffdfb;
+  --artbarrojo1: #9e2a2b;
+  --black: #000000b5;
+  --gray: #000000a0;
+  /* --font-size-xl: 198px;
+  --font-size-l: 60px;
+  --font-size-m: 48px;
+  --font-size-s: 40px;
+  --font-size-xs: 32px;
+  --font-size-paragraph: 20px; */
+  --font-titles: 'EB Garamond', Georgia, 'Times New Roman', Times, serif;
+  --font-text: 'Open Sans', sans serif;
+  --step--2: clamp(0.33rem, calc(0.32rem + 0.07vw), 0.43rem);
+  --step--1: clamp(0.54rem, calc(0.52rem + 0.11vw), 0.7rem);
+  --step-0: clamp(0.88rem, calc(0.84rem + 0.18vw), 1.13rem);
+  --step-1: clamp(1.42rem, calc(1.36rem + 0.29vw), 1.82rem);
+  --step-2: clamp(2.29rem, calc(2.2rem + 0.47vw), 2.95rem);
+  --step-3: clamp(3.71rem, calc(3.56rem + 0.76vw), 4.76rem);
+  --step-4: clamp(6rem, calc(5.75rem + 1.22vw), 7.71rem);
+  --step-5: clamp(9.7rem, calc(9.31rem + 2.5vw), 15rem);
+  --letter-spacing5-2: calc((var(--step-5) - var(--step-2)) / var(--step-2));
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 20px;
+  isolation: isolate;
+  background: var(--bgwhite);
+  font-family: var(--step-0);
+}
+
+h1 {
+  font-size: var(--step-5);
+  font-family: var(--font-titles);
+}
+
+h2 {
+  font-size: var(--step-4);
+  font-family: var(--font-titles);
+}
+
+h3 {
+  font-size: var(--step-3);
+  font-family: var(--font-titles);
+}
+
+h4 {
+  font-size: var(--step-2);
+  font-family: var(--font-titles);
+}
+
+h5 {
+  font-size: var(--step-1);
+  font-family: var(--font-titles);
+}
+
+h6 {
+  font-size: var(--step-0);
+  font-family: var(--font-titles);
+}
+
+/*NAVBAR*/
+
+/*NAVBAR*/
+
+
+.navbar-brand {
+  position: relative;
+  background: url(/src/photos/artbar-logo.png);
+  width: 2rem;
+  left: 15px;
+  background-size: contain;
+}
+
+.navbar-toggler {
+  border: none;
+  box-shadow: none !important;
+}
+
+.nav-link {
+  color: var(--black);
+  font-size: var(--step-3);
+  font-family: var(--font-text);
+  font-weight: 600;
+}
+
+.modal-content {
+  background-color: rgba(255, 253, 251, 0.95);
+}
+
+
+/*LANDING PAGE*/
+
+.landing-page {
+  display: flex;
+  align-self: center;
+}
+
+.bg-image {
+  background-image: url(/src/photos/bg-image.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  z-index: -999;
+}
+
+.foreground {
+  display: block;
+}
+
+.artesanos-title {
+  font-family: var(--font-titles);
+  color: var(--bgwhite);
+  letter-spacing: 0.3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: fit-content;
+  background: var(--artbarrojo1);
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.titles-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: flex-start;
+  height: 100%;
+  max-width: 70%;
+}
+
+.artbar-text {
+  /* letter-spacing: calc((100% - (var(--step-5))) / 6);
+  letter-spacing: var(--step-0); */
+  letter-spacing: var(--letter-spacing5-2);
+}
+
+.base-nominal-text {
+  /* letter-spacing: calc((100% - (var(--step-2))) / 34); */
+  letter-spacing: var(--letter-spacing5-2);
+}

@@ -8,7 +8,7 @@
     <meta property="og:locale" content="es_ES" />
     <meta
       property="og:title"
-      content="artbar: Base nominal de artesanos en Barcelona entre los años 1814 y 1860."
+      content="Artbar: Base nominal de artesanos en Barcelona entre los años 1814 y 1860."
     />
     <meta property="og:description" content="" />
     <!-- <meta property="og:url" content="https://... /> -->
@@ -31,7 +31,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=EB+Garamond&family=Open+Sans&display=swap"
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;600&=Open+Sans:wght@300;400;800&display=swap"
       rel="stylesheet"
     />
     <link
@@ -44,7 +44,7 @@
 
   <body class="bg-top-left bg-image">
     <header></header>
-    <nav class="navbar navbar-light" style="box-shadow: none">
+    <nav class="navbar navbar-light mt-4 ms-4" style="box-shadow: none">
       <div class="">
         <label
           class="navbar-toggler hamburger-menu d-flex"
@@ -60,19 +60,15 @@
           class="modal fade"
           id="menuModal"
           tabindex="-1"
-          aria-labelledby="menuModalLabel"
+          aria-labelledby="menu-modal-label1"
           aria-hidden="true"
         >
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-              <div class="modal-header w-50 d-flex">
-                <div class="d-flex">
-                </div>
-                <div class="d-flex justify-content-center">
-                  <h5 class="modal-title text-center" id="menuModalLabel">
-                    menu
-                  </h5>
-                </div>
+              <div class="modal-header justify-content-center">
+                <h5 class="modal-title text-center" id="menu-modal-label2">
+                  menu
+                </h5>
               </div>
               <div class="modal-body">
                 <ul
@@ -109,32 +105,55 @@
                     >
                   </li>
                 </ul>
+                <div class="search-wrapper">
+                  <form class="d-flex" id="search-form-in">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Buscar"
+                      aria-label="Buscar"
+                      id="search-input-in"
+                    />
+                    <button class="btn btn" type="submit" id="search-button-in">
+                      <span
+                        class="material-icons search-in"
+                        id="google-icon-search-in"
+                      >
+                        search
+                      </span>
+                    </button>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <form class="d-flex" id="search-form">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-            id="search-input"
-          />
-          <button
-            class="btn btn-outline-success"
-            type="submit"
-            id="search-button"
-          >
-            <span class="material-icons"> search </span>
-          </button>
-        </form>
+        <div class="search-wrapper" id="search-wrapper-out">
+          <form class="d-flex" id="search-form-out">
+            <div class="search-box">
+              <input
+                class="form-control"
+                type="search"
+                placeholder="Buscar"
+                aria-label="Buscar"
+                id="search-input-out"
+              />
+              <button class="btn btn" type="submit" id="search-button-out">
+                <span
+                  class="material-icons search out"
+                  id="google-icon-search-out"
+                >
+                  search
+                </span>
+              </button>
+            </div>
+          </form>
+        </div>
       </div>
-      <div></div>
     </nav>
 
     <section class="landing-page">
-      <div class="artgray mx-5">
+      <div class="art-box d-block mx-5">
         <div class="artesanos-title d-flex my-5 px-3 py-2">
           <h4 class="artesanos-text">Artesanos: Barcelona 1814 – 1860</h4>
         </div>

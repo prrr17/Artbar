@@ -61,8 +61,8 @@
 
   --letter-spacing5-2: calc((var(--step-5) - var(--step-2)) / var(--step-2));
 
-  --bar-width: var(--step-2);
-  --bar-height: var(--step--2);
+  --bar-width: var(--space-m-l);
+  --bar-height: var(--space-3xs);
   --hamburger-gap: var(--space-3xs);
   --hamburger-margin: 4%;
   --animation-timing: 200ms ease-in-out;
@@ -118,20 +118,26 @@ p {
   font-family: var(--font-text);
 }
 
+
+/* HEADER */
+
+.artbar-logo {
+  display: flex;
+  justify-content: center;
+}
+
+.navbar-brand img {
+  height: var(--step-0);
+  margin-top: var(--space-m-l);
+  margin-left: var(--space-2xl);
+}
+
 /*NAVBAR*/
 
 .navbar {
   position: relative;
-  top: var(--space-m-l);
+  top: var(--space-xs);
   left: var(--space-m-l);
-}
-
-.navbar-brand {
-  position: relative;
-  background: url(/src/photos/artbar-logo.png);
-  width: 2rem;
-  left: 15px;
-  background-size: contain;
 }
 
 .navbar-toggler {
@@ -141,7 +147,7 @@ p {
 
 .nav-link {
   color: var(--artblack);
-  font-size: var(--step-3);
+  font-size: var(--step-2);
   font-family: var(--font-text);
   font-weight: 800;
   gap: var(--space-l-xl);
@@ -187,12 +193,16 @@ p {
 
 /*Search button*/
 .material-icons {
-  font-size: var(--step-2) !important;
+  font-size: var(--step-1) !important;
   color: var(--artblack);
 }
 
 #search-input-out {
   display: none;
+}
+
+.search-box {
+  padding-top: var(--step-1);
 }
 
 .form-control {
@@ -238,7 +248,7 @@ input:focus::placeholder {
   background-color: white;
   max-height: fit-content;
   border-radius: 10px;
-  margin-top: var(--space-l)
+  margin-top: var(--space-l);
 }
 
 #search-wrapper-out {
@@ -321,31 +331,34 @@ input:focus::placeholder {
   opacity: 0;
 }
 
-/*LANDING PAGE*/
+/* 
+.horiz-line {
+  
+} */
 
+/*LANDING PAGE*/
 .landing-page {
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-left: var(--space-m-l);
-  margin-top: var(--space-m-l);
+  margin: var(--space-m-l);
 }
 
 .bg-image {
   background-image: url(/src/photos/bg-image.png);
-  position: absolute;
   right: 0;
   top: 0;
   background-repeat: no-repeat;
   background-size: cover;
+  height: max-content;
   z-index: -999;
 }
 
 .artesanos-title {
   font-family: var(--font-titles);
   color: var(--bgwhite);
-  letter-spacing: 0.3rem;
+  letter-spacing: var(--space-3xs);
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -369,14 +382,15 @@ input:focus::placeholder {
 .artbar-text {
   /* letter-spacing: calc((100% - (var(--step-5))) / 6);
   letter-spacing: var(--step-0); */
-  letter-spacing: var(--letter-spacing5-2);
+  letter-spacing: var(--space-3xs);
   color: var(--artgray);
-  font-weight: 600;
-  text-shadow: 0px 0px 35px var(--bgwhite);
+  font-weight: 500;
+  text-shadow: 1px 1px 35px rgb(255, 255, 255);
+  text-shadow: 2px 2px rgb(45, 32, 32);
 }
 
 .base-nominal-text {
   /* letter-spacing: calc((100% - (var(--step-2))) / 34); */
-  letter-spacing: var(--letter-spacing5-2);
+  letter-spacing: var(--space-3xs);
   color: var(--artgray);
 }

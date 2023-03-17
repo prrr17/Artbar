@@ -39,13 +39,14 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="home-link" href="index.html" />
 
     <title>Artbar</title>
   </head>
 
   <body class="bg-top-left bg-image">
-    <nav class="navbar navbar-light mt-4 ms-4" style="box-shadow: none">
-      <div class="">
+    <nav class="navbar fixed-top navbar-light mt-4 ms-4" style="box-shadow: none">
+      <div class="d-flex flex-column">
         <label
           class="navbar-toggler hamburger-menu d-flex"
           type="button"
@@ -53,7 +54,7 @@
           data-bs-target="#menuModal"
           aria-label="Toggle navigation"
         >
-          <input type="checkbox"/>
+          <input type="checkbox" />
         </label>
         <div
           class="modal fade"
@@ -133,42 +134,10 @@
           </div>
         </div>
       </div>
-      <div class="search-wrapper" id="search-wrapper-out">
-        <form class="d-flex" id="search-form-out">
-          <div class="search-box">
-            <input
-              class="form-control"
-              type="search"
-              placeholder="Buscar"
-              aria-label="Buscar"
-              id="search-input-out"
-            />
-            <button class="btn btn" type="submit" id="search-button-out">
-              <span
-                class="material-icons search out"
-                id="google-icon-search-out"
-              >
-                search
-              </span>
-            </button>
-          </div>
-        </form>
-      </div>
+      <a class="navbar-brand" href="#" id="brand-link"></a>
     </nav>
-
-    <section class="landing-page" id="home">
-      <div class="art-box d-block mx-5 my-5">
-        <div class="artesanos-title d-flex my-5 px-3 py-2">
-          <h5 class="artesanos-text">Artesanos: Barcelona 1814 – 1860</h5>
-        </div>
-        <div class="titles-container">
-          <h1 class="artbar-text">ARTBAR</h1>
-          <h5 class="base-nominal-text">
-            Base de datos nominal de
-            <span class="fst-italic">artesanos</span>
-          </h5>
-        </div>
-      </div>
+    <section class="sobre-proyecto">
+      <div class="art-box d-block mx-5 my-5"></div>
     </section>
   </body>
 </html>

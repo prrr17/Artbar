@@ -43,18 +43,38 @@
     <title>Artbar</title>
   </head>
 
-  <body class="bg-top-left bg-image">
-    <nav class="navbar navbar-light mt-4 ms-4" style="box-shadow: none">
-      <div class="d-flex flex-column">
-        <label
-          class="navbar-toggler hamburger-menu d-flex"
-          type="button"
-          data-bs-toggle="modal"
-          data-bs-target="#menuModal"
-          aria-label="Toggle navigation"
+  <body class="bg-top-left">
+    <header class="w-100">
+      <div class="artbar-logo">
+        <a
+          class="navbar-brand"
+          href="/index.html"
+          id="brand-link"
+          alt="link a la página de inicio"
         >
-          <input type="checkbox" />
-        </label>
+          <img src="/src/photos/artbar-logo.png"
+        /></a>
+      </div>
+    </header>
+
+    <nav class="navbar navbar-light" style="box-shadow: none">
+      <div class="container w-100">
+        <div class="row w-100">
+          <div class="col-2">
+            <label
+              class="navbar-toggler hamburger-menu ms-auto me-auto"
+              type="button"
+              data-bs-toggle="modal"
+              data-bs-target="#menuModal"
+              aria-label="Toggle navigation"
+            >
+              <input type="checkbox" />
+            </label>
+          </div>
+          <div class="col-10">
+            <div class="top-horiz-line"></div>
+          </div>
+        </div>
         <div
           class="modal fade"
           id="menuModal"
@@ -82,8 +102,8 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/sobre-proyecto.html"
-                      id="sobre-proyecto-link"
+                      href="/proyecto.html"
+                      id="proyecto-link"
                       >SOBRE EL PROYECTO</a
                     >
                   </li>
@@ -133,9 +153,11 @@
           </div>
         </div>
       </div>
-      <a class="navbar-brand" href="#" id="brand-link"></a>
     </nav>
 
-    <section class="metodologia-page"></section>
+    <main>
+      <section class="metodologia-page"></section>
+      <div></div>
+    </main>
   </body>
 </html>

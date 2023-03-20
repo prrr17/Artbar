@@ -39,8 +39,9 @@
       href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet"
     />
+    <link rel="home-link" href="index.html" />
 
-    <title>Artbar</title>
+    <title>Artbar: Fuentes y metodología</title>
   </head>
 
   <body class="bg-top-left">
@@ -84,7 +85,7 @@
         >
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-              <div class="modal-header justify-content-center">
+              <div class="modal-header justify-content-center pb-0">
                 <h5 class="modal-title text-center" id="menu-modal-label2">
                   menu
                 </h5>
@@ -100,10 +101,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/proyecto.html"
-                      id="proyecto-link"
+                    <a class="nav-link" href="/proyecto.html" id="proyecto-link"
                       >SOBRE EL PROYECTO</a
                     >
                   </li>
@@ -126,6 +124,11 @@
                   <li class="nav-item">
                     <a class="nav-link" href="/creditos.html" id="creditos-link"
                       >CRÉDITOS Y LOGROS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html" id="contacto-link"
+                      >CONTACTO</a
                     >
                   </li>
                 </ul>
@@ -154,10 +157,59 @@
         </div>
       </div>
     </nav>
-
-    <main>
-      <section class="metodologia-page"></section>
-      <div></div>
+    <main class="w-100">
+      <section class="metodologia">
+        <div class="row main-content">
+          <div class="title-col col-sm-3">
+            <div class="proyecto-title">
+              <h4 class="vertical-text">Fuentes y metodología</h4>
+            </div>
+          </div>
+          <div class="text-col col-sm-9">
+            <div class="text-container">
+              <p>
+                Armonización de la base de datos:</p> <p> Dada la inestabilidad de las
+                grafías y toponimias de la época, los campos de presentación de
+                resultados recogen la grafía más estable, la de las
+                instituciones oficiales. Sin embargo, los campos de indexación
+                de la base de datos contienen tanto las grafías estables como
+                inestables lo que permite que las búsquedas puedan ejecutarse
+                utilizando unas u otras.
+              </p>
+              <p>
+                Las fuentes utilizadas para la reconstrucción de las
+                trayectorias artesanas utilizadas proceden de:
+              </p>
+              <ul>
+                <li>
+                  Registro de defunciones de la ciudad de Barcelona: años 1834 -
+                  1850
+                </li>
+                <li>
+                  <a href="https://ajuntament.barcelona.cat/arxiumunicipal/arxiuhistoric/es">Arxiu Històric Muncipal de Barcelona</a>: registros de las
+                  colecciones gremiales (tanto de la Junta de Comercio como de
+                  cada uno de los gremios), documentación del fondo «Cadastre»
+                  así como las Contribuciones Extraordinarias de Guerra de 1823
+                  y 1838; Contribución de prestamistas de 1838; Subsidio
+                  Industrial de 1860 y Guías de la ciudad de 1842 y 1849
+                </li>
+                <li>
+                  Archivo Histórico de Protocolos de Barcelona: Manuales
+                  notariales del periodo 1836 – 1860
+                </li>
+                <li>
+                  Prensa de la época: las publicaciones utilizadas constan en
+                  las fichas individuales de los artesanos
+                </li>
+                <li>
+                  Archivo Histórico de Diputados: Listado de firmantes de la
+                  Exposición de la Clase Obrera a las Cortes.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>

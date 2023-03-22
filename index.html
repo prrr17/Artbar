@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="og:type" content="website" />
+    <meta property="og:locale" content="es_ES" />
+    <meta
+      property="og:title"
+      content="Artbar: Base nominal de artesanos en Barcelona entre los años 1814 y 1860."
+    />
+    <meta property="og:description" content="" />
+    <!-- <meta property="og:url" content="https://... /> -->
+    <meta property="og:image" content="/src/photos/thumbnail.png" />
+    <meta name="twiter:card" content="/src/photos/thumbnail.png" />
+    <link rel="icon" href="/src/photos/a-logo.svg" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+
+    <link href="scss/custom.css" rel="stylesheet" type="text/css" />
+    <link href="/src/styles.css" rel="stylesheet" type="text/css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500&=Open+Sans:wght@300;400;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Artbar</title>
+  </head>
+
+  <body class="bg-top-left bg-home w-100">
+    
+    <nav class="navbar navbar-light" style="box-shadow: none">
+      <div class="">
+        <label
+          class="navbar-toggler hamburger-menu d-flex"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#menuModal"
+          aria-label="Toggle navigation"
+        >
+          <input type="checkbox"/>
+        </label>
+        <div
+          class="modal fade"
+          id="menuModal"
+          tabindex="-1"
+          aria-labelledby="menu-modal-label1"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+              <div class="modal-header justify-content-center pb-0">
+                <h4 class="modal-title text-center" id="menu-modal-label2">
+                  menu
+                </h4>
+              </div>
+              <div class="modal-body">
+                <ul
+                  class="navbar-nav d-flex flex-column justify-content-center align-items-center"
+                  id="navbar-list"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link" href="/index.html" id="home-link"
+                      >INICIO</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/proyecto.html"
+                      id="proyecto-link"
+                      >SOBRE EL PROYECTO</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/base-datos.html"
+                      id="base-datos-link"
+                      >ACCESO A LA BASE DE DATOS</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a
+                      class="nav-link"
+                      href="/metodologia.html"
+                      id="metodologia-link"
+                      >METODOLOGÍA Y FUENTES</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/creditos.html" id="creditos-link"
+                      >CRÉDITOS Y LOGROS</a
+                    >
+                  </li>
+                </ul>
+                <div class="search-wrapper">
+                  <form class="d-flex" id="search-form-in">
+                    <input
+                      class="form-control"
+                      type="search"
+                      placeholder="Buscar"
+                      aria-label="Buscar"
+                      id="search-input-in"
+                    />
+                    <button class="btn btn" type="submit" id="search-button-in">
+                      <span
+                        class="material-icons search-in"
+                        id="google-icon-search-in"
+                      >
+                        search
+                      </span>
+                    </button>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="search-wrapper" id="search-wrapper-out">
+        <form class="d-flex" id="search-form-out">
+          <div class="search-box">
+            <input
+              class="form-control"
+              type="search"
+              placeholder="Buscar"
+              aria-label="Buscar"
+              id="search-input-out"
+            />
+            <button class="btn btn" type="submit" id="search-button-out">
+              <span
+                class="material-icons search out"
+                id="google-icon-search-out"
+              >
+                search
+              </span>
+            </button>
+          </div>
+        </form>
+      </div>
+    </nav>
+
+    <section class="landing-page" id="home">
+      <div class="art-box mx-5 my-5">
+        <button class="artesanos-title d-flex my-5 px-3 py-2">
+          <h5 class="artesanos-text">Artesanos: Barcelona 1814 – 1860</h5>
+        </button>
+        <div class="titles-container">
+          <h1 class="artbar-text">ARTBAR</h1>
+          <h5 class="base-nominal-text">
+            Base de datos nominal de
+            <span class="fst-italic">artesanos</span>
+          </h5>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -44,7 +44,7 @@
     <title>Artbar: Créditos</title>
   </head>
 
-  <body class="bg-top-left bg-pages">
+  <body class="bg-top-left">
     <header class="w-100">
       <div class="artbar-logo">
         <a
@@ -139,6 +139,8 @@
                       placeholder="Buscar"
                       aria-label="Buscar"
                       id="search-input-in"
+                      alt="búsqueda"
+                      autocomplete="off"
                     />
                     <button class="btn btn" type="submit" id="search-button-in">
                       <span
@@ -191,9 +193,9 @@
                 >; HAR2008-01998/HIST:
                 <cite
                   >Reconstrucción de la actividad económica en la Cataluña
-                  contemporánea (XIX-XX): trabajo y movilidad social todos ellos
-                  del Ministerio de Ciencia e Innovación</cite
-                >
+                  contemporánea (XIX-XX): trabajo y movilidad social</cite
+                  >; todos ellos
+                  del Ministerio de Ciencia e Innovación
               </p>
               <div class="grupo-box d-flex">
                 <div>
@@ -222,9 +224,10 @@
           </div>
         </div>
         <div class="row logos-creditos border-top border-dark">
-          <div class="col-sm-4">
+          <div class="col-sm-3 order-2 order-sm-1">
             <a
               href="https://www.ub.edu/portal/web/geografia-historia-es/historia-contemporanea"
+              class="links-organizaciones"
               alt="link a la web del departamento de Historia Contemporánea la Facultad de Geografía e Historia de la UB"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
@@ -235,12 +238,13 @@
               <img
                 src="/src/photos/logo-ub.png"
                 alt="logo de la Universidad de Barcelona"
-                width="70%"
+                width="100%"
             /></a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3 order-1 order-sm-2 align-content-center">
             <a
               href="https://www.ciencia.gob.es/"
+              class="links-organizaciones"
               alt="link a la web del Ministerio de Ciencia e Innovación del Gobierno de España"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
@@ -251,12 +255,13 @@
               <img
                 src="/src/photos/Logot-ministerio.png"
                 alt="logo del Ministerio de Ciencia e Innovación – Gobierno de España"
-                width="70%"
+                width="100%"
             /></a>
           </div>
-          <div class="col-sm-4">
+          <div class="col-sm-3 order-3 align-content-center">
             <a
               href="http://www.ub.edu/tig/"
+              class="links-organizaciones"
               alt="link a la web del grupo de investigación Treball, Institucions y Gènere"
               data-bs-toggle="tooltip"
               data-bs-placement="top"
@@ -265,7 +270,7 @@
               rel="noreferrer noopener"
             >
               <img
-                class="bg-dark m-3 p-3"
+                class="bg-dark m-3 px-5 py-3"
                 src="/src/photos/TIG.png"
                 alt="logo del grupo de investigación Treball, Institucions y Gènere"
                 width="70%"

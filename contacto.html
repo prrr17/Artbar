@@ -26,6 +26,44 @@
       crossorigin="anonymous"
     ></script>
 
+    <script>
+      document
+        .getElementById('contact-form')
+        .addEventListener('keydown', function (e) {
+          if (e.key === 'Enter') {
+            e.preventDefault(); //para que la página no se refresque al enviar
+            submitForm();
+          }
+        });
+
+      function submitForm() {
+        const popupContainer = document.getElementById('popup-container');
+        const popupContent = document.getElementById('popup-content');
+        const popupMessage = document.getElementById('popup-message');
+        const popupClose = document.getElementById('popup-close');
+
+        popupMessage.innerText =
+          'Su mensaje ha sido enviado, gracias por contactarnos. Le contestaremos con la mayor brevedad posible';
+        popupContainer.style.display = 'flex';
+
+        popupClose.addEventListener('click', () => {
+          popupContainer.style.display = 'none';
+        });
+        document.addEventListener('click', (e) => {
+          if (!popupContent.contains(e.target)) {
+            popupContainer.style.display = 'none';
+          }
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') {
+            popupContainer.style.display = 'none';
+          }
+        });
+        return false;
+      }
+    </script>
+
     <link href="scss/custom.css" rel="stylesheet" type="text/css" />
     <link href="/src/styles.css" rel="stylesheet" type="text/css" />
 
@@ -139,6 +177,8 @@
                       placeholder="Buscar"
                       aria-label="Buscar"
                       id="search-input-in"
+                      alt="búsqueda"
+                      autocomplete="off"
                     />
                     <button class="btn btn" type="submit" id="search-button-in">
                       <span
@@ -167,15 +207,21 @@
           <div class="text-col col-sm-9">
             <div class="text-container contact-container">
               <p>
-                Para la realización de cualquier sugerencia, petición de
-                información o rectificación o contacto.
+                Si tiene cualquier sugerencia, petición de información o
+                rectificación, puede contactarnos mediante el siguiente
+                formulario.
               </p>
-              <p>Rellenar y enviar el siguiente formulario</p>
               <div class="form-card">
                 <div class="card">
                   <div class="card-body">
                     <div class="container">
-                      <form id="contact-form" role="form">
+                      <form
+                        id="contact-form"
+                        role="form"
+                        method="POST"
+                        action="submit-form.php"
+                        onsubmit="return submitForm()"
+                      >
                         <div class="controls">
                           <div class="row">
                             <div class="col-md-12">
@@ -216,7 +262,7 @@
                                   name="need"
                                   class="form-control"
                                   required="required"
-                                  data-error="Por favor, especifique el asunto "
+                                  data-error="Por favor, especifique el asunto de su email"
                                 >
                                   <option value="" selected disabled>
                                     --Selecione asunto--
@@ -258,6 +304,12 @@
                           </div>
                         </div>
                       </form>
+                      <div id="popup-container" class="hidden">
+                        <div id="popup-content">
+                          <p id="popup-message"></p>
+                          <button id="popup-close">&times;</button>
+                        </div>
+                      </div>
                     </div>
                   </div>
                 </div>

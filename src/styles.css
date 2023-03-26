@@ -641,6 +641,22 @@ input:focus::placeholder {
   justify-content: center;
 }
 
+.links-organizaciones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 576px) {
+  .grupo-box {
+    margin-top: var(--margin-top);
+  }
+  .logos-creditos {
+    margin-left: var(--space-m-l);
+    padding: var(--space-m-l);
+  }
+}
+
 /*CONTACT*/
 .controls .row {
   margin-bottom: var(--space-m);
@@ -680,7 +696,7 @@ input:focus::placeholder {
 
 .contacto-form::placeholder {
   text-align: left;
-  font-size: var(--space-2xs-xs);
+  font-size: var(--step--1);
   font-weight: 300;
 }
 
@@ -747,7 +763,65 @@ input:focus::placeholder {
 }
 
 #form_need {
-  height: var(--space-s-m);
+  margin: 0;
+  padding: var(--space-3xs-2xs);
   display: flex;
   align-items: center;
+  font-size: var(--step--1);
+}
+
+#popup-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 999;
+  display: none;
+}
+
+#popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--bgwhite);
+  padding: 20px;
+  border-radius: 0px;
+  text-align: center;
+  box-shadow: inset 0 2px 2px rgba(195, 195, 195, 0.075),
+    0 0 8px rgba(241, 241, 241, 0.6);
+}
+
+#popup-message {
+  font-family: var(--font-text);
+  font-size: var(--step--1);
+  margin: 0;
+  padding: var(--step-0);
+  color: var(--artblack);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#popup-close {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+  border: none;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+#popup-close:hover,
+#popup-close:focus {
+  color: var(--artbarrojo1);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
 }

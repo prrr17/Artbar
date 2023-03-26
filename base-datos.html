@@ -43,7 +43,7 @@
     <title>Artbar</title>
   </head>
 
-  <body class="bg-top-left">
+  <body class="bg-top-left" data-searchable>
     <header class="w-100">
       <div class="artbar-logo">
         <a
@@ -99,10 +99,7 @@
                     >
                   </li>
                   <li class="nav-item">
-                    <a
-                      class="nav-link"
-                      href="/proyecto.html"
-                      id="proyecto-link"
+                    <a class="nav-link" href="/proyecto.html" id="proyecto-link"
                       >SOBRE EL PROYECTO</a
                     >
                   </li>
@@ -136,6 +133,8 @@
                       placeholder="Buscar"
                       aria-label="Buscar"
                       id="search-input-in"
+                      alt="búsqueda"
+                      autocomplete="off"
                     />
                     <button class="btn btn" type="submit" id="search-button-in">
                       <span
@@ -153,7 +152,7 @@
         </div>
       </div>
     </nav>
-    
+
     <main>
       <section class="metodologia-page"></section>
     </main>

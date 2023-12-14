@@ -231,7 +231,6 @@ a {
 }
 
 /* Underline on hover */
-
 .nav-link {
   display: inline-block;
   position: relative;
@@ -403,23 +402,40 @@ input:focus::placeholder {
 
 /*LANDING PAGE*/
 .landing-page {
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: var(--margin-left-sm-scr);
 }
 
-.bg-home {
-  background-image: url(/src/photos/bg-image.png);
-  right: 0;
-  top: 0;
-  background-repeat: repeat-y;
-  background-size: cover;
-  height: max-content;
-  z-index: -999;
+#whole {
+  height: 100vh;
+  overflow: hidden;
 }
 
+.bg-home {
+  background-image: linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.1)
+    ),
+    url(./photos/bg-image.png);
+  background-repeat: repeat-y;
+  background-size: 90vw;
+  background-position: top right;
+  height: max-content;
+  z-index: -999;
+  animation: slideBg 30s linear infinite alternate;
+}
+
+@keyframes slideBg {
+  from {
+    background-position: top right;
+  }
+  to {
+    background-position: bottom right;
+  }
+}
 /* based on https://css-tricks.com/cool-hover-effects-that-use-css-text-shadow/ */
 .art-box {
   margin-top: var(--space-2xl-3xl);
@@ -436,10 +452,10 @@ input:focus::placeholder {
   }
 }
 
-.artesanos-title {
+.button-title {
   color: var(--artblack);
   font-family: var(--font-titles);
-  letter-spacing: var(--space-3xs);
+  /* letter-spacing: var(--space-3xs); */
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -453,9 +469,14 @@ input:focus::placeholder {
     background-position 0.3s calc(0.3s - calc(var(--i, 0) * 0.3s));
 }
 
-.artesanos-title:hover {
+.button-title:hover {
   --i: 1;
   color: var(--bgwhite);
+}
+
+.button-text {
+  text-align: left;
+
 }
 
 .titles-container {
@@ -597,7 +618,18 @@ input:focus::placeholder {
   transform-origin: bottom left;
 }
 
-/*CRÉDTOS*/
+/*CITA*/
+
+#grupo-box-cita{
+margin-top:auto;
+align-items: baseline;
+text-align: start;
+align-content: baseline;}
+
+#cita-box{}
+
+
+/*CRÉDITOS*/
 .grupo-box {
   gap: var(--space-3xs);
   max-height: var(--space-2xl-3xl);

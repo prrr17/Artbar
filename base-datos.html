@@ -27,7 +27,7 @@
     ></script>
 
     <link href="scss/custom.css" rel="stylesheet" type="text/css" />
-    <link href="/src/styles.css" rel="stylesheet" type="text/css" />
+    <link href="/code/src/styles.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -56,24 +56,18 @@
       </div>
     </header>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-light" style="box-shadow: none">
-      <div class="container w-100">
-        <div class="row w-100">
-          <div class="col-2">
-            <label
-              class="navbar-toggler hamburger-menu ms-auto me-auto"
-              type="button"
-              data-bs-toggle="modal"
-              data-bs-target="#menuModal"
-              aria-label="Toggle navigation"
-            >
-              <input type="checkbox" />
-            </label>
-          </div>
-          <div class="col-10">
-            <div class="top-horiz-line"></div>
-          </div>
-        </div>
+      <div class="">
+        <label
+          class="navbar-toggler hamburger-menu d-flex"
+          type="button"
+          data-bs-toggle="modal"
+          data-bs-target="#menuModal"
+          aria-label="Toggle navigation"
+        >
+          <input type="checkbox" />
+        </label>
         <div
           class="modal fade"
           id="menuModal"
@@ -83,14 +77,14 @@
         >
           <div class="modal-dialog modal-fullscreen">
             <div class="modal-content">
-              <div class="modal-header justify-content-center">
-                <h5 class="modal-title text-center" id="menu-modal-label2">
+              <div class="modal-header justify-content-center pb-0">
+                <h4 class="modal-title text-center" id="menu-modal-label2">
                   menu
-                </h5>
+                </h4>
               </div>
               <div class="modal-body">
                 <ul
-                  class="navbar-nav d-flex flex-column justify-content-center align-items-center"
+                  class="navbar-nav justify-content-center align-items-center"
                   id="navbar-list"
                 >
                   <li class="nav-item">
@@ -114,9 +108,14 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/metodologia.html"
+                      href="/code/metodologia.html"
                       id="metodologia-link"
                       >METODOLOGÍA Y FUENTES</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cita.html" id="creditos-link"
+                      >CÓMO CITAR</a
                     >
                   </li>
                   <li class="nav-item">
@@ -124,11 +123,16 @@
                       >CRÉDITOS</a
                     >
                   </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contacto.html" id="contacto-link"
+                      >CONTACTO</a
+                    >
+                  </li>
                 </ul>
-                <div class="search-wrapper">
+                <div class="search-wrapper shadow">
                   <form class="d-flex" id="search-form-in">
                     <input
-                      class="form-control"
+                      class="form-control form-buscar"
                       type="search"
                       placeholder="Buscar"
                       aria-label="Buscar"
@@ -152,9 +156,10 @@
         </div>
       </div>
     </nav>
+    <!-- Fin Navbar -->
 
     <main>
-      <section class="metodologia-page"></section>
+      <section class="" id="base-datos-page"></section>
     </main>
   </body>
 </html>

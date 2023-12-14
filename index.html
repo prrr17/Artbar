@@ -12,9 +12,9 @@
     />
     <meta property="og:description" content="" />
     <!-- <meta property="og:url" content="https://... /> -->
-    <meta property="og:image" content="/src/photos/thumbnail.png" />
-    <meta name="twiter:card" content="/src/photos/thumbnail.png" />
-    <link rel="icon" href="/src/photos/a-logo.svg" />
+    <meta property="og:image" content="src/photos/thumbnail.png" />
+    <meta name="twiter:card" content="src/photos/thumbnail.png" />
+    <link rel="icon" href="src/photos/a-logo.svg" />
 
     <link
       rel="stylesheet"
@@ -26,8 +26,8 @@
       crossorigin="anonymous"
     ></script>
 
-    <link href="scss/custom.css" rel="stylesheet" type="text/css" />
-    <link href="/src/styles.css" rel="stylesheet" type="text/css" />
+    <link href="scss/custom.scss" rel="stylesheet" type="text/css" />
+    <link href="src/styles.css" rel="stylesheet" type="text/css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -43,7 +43,8 @@
     <title>Artbar</title>
   </head>
 
-  <body class="bg-top-left bg-home w-100">
+  <body class="bg-top-left bg-home w-100" id="whole">
+    <!-- Navbar -->
     <nav class="navbar navbar-light" style="box-shadow: none">
       <div class="">
         <label
@@ -95,9 +96,14 @@
                   <li class="nav-item">
                     <a
                       class="nav-link"
-                      href="/metodologia.html"
+                      href="/code/metodologia.html"
                       id="metodologia-link"
                       >METODOLOGÍA Y FUENTES</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/cita.html" id="cita-link"
+                      >CÓMO CITAR</a
                     >
                   </li>
                   <li class="nav-item">
@@ -138,18 +144,21 @@
         </div>
       </div>
     </nav>
+    <!-- Fin Navbar -->
 
     <section class="landing-page" id="home">
-      <div class="art-box">
-        <button class="artesanos-title d-flex my-5 px-3 py-2">
-          <h5 class="artesanos-text">Artesanos: Barcelona 1814 – 1860</h5>
-        </button>
+      <div class="art-box px-3 py-2">
         <div class="titles-container">
           <h1 class="artbar-text">ARTBAR</h1>
-          <h5 class="base-nominal-text">
-            Base de datos nominal de
-            <span class="fst-italic">artesanos</span>
+          <h5 class="my-2">
+            Base de datos nominal de artesanos: Barcelona 1814 – 1860
           </h5>
+          <button
+            class="ir-base button-title mt-4 pt-3"
+            href="/base-datos.html"
+          >
+            <h6 class="button-text">Acceder a la base de datos ></h6>
+          </button>
         </div>
       </div>
     </section>
